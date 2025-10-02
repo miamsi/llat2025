@@ -16,7 +16,7 @@ except LookupError:
 
 # --- CONFIGURATION ---
 # Using 'r' prefix for a raw string to correctly handle Windows backslashes
-FILE_PATH = r"C:\Users\michael.sidabutar\Documents\sr\chatbot\faq.csv"
+FILE_PATH = r"faq.csv"
 SIMILARITY_THRESHOLD = 0.35 # Minimum similarity score to suggest a question
 TOP_N_SUGGESTIONS = 3
 
@@ -168,3 +168,4 @@ def faq_app():
 # Run the application
 if __name__ == "__main__":
     faq_app()
+
