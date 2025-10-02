@@ -120,10 +120,10 @@ def find_similar_questions(query, df, vectorizer, tfidf_matrix):
 
 # --- STREAMLIT APP LAYOUT ---
 def faq_app():
-    st.set_page_config(page_title="FAQ Similarity Chatbot", layout="centered")
+    st.set_page_config(page_title="FAQ Jadwal Langkah-langkah Akhir Tahun 2025", layout="centered")
     
     st.title("🤖 FAQ Similarity Chatbot")
-    st.markdown("Enter your question, and I will suggest the closest matches from the dataset.")
+    st.markdown("Silahkan masukkan pertanyaan, nanti saya akan tampilkan informasi paling sesuai dari dataset.")
 
     # Load data only once
     df, vectorizer, tfidf_matrix = load_and_prepare_data(FILE_PATH)
@@ -133,13 +133,13 @@ def faq_app():
         st.session_state.suggested_q = None
 
     # --- User Input ---
-    user_query = st.text_input("Ask a question about the schedule:", key="user_input")
+    user_query = st.text_input("Tanyakan tentang schedule:", key="user_input")
     
     if user_query:
         suggestions, answers = find_similar_questions(user_query, df, vectorizer, tfidf_matrix)
         
         if suggestions:
-            st.subheader(f"🤔 Did you mean one of these? ({len(suggestions)} suggestions found)")
+            st.subheader(f"🤔 Apakah ini maksud Anda? ({len(suggestions)} informasi terkait ditemukan)")
             
             # --- Display Suggestions as Buttons ---
             
@@ -168,4 +168,5 @@ def faq_app():
 # Run the application
 if __name__ == "__main__":
     faq_app()
+
 
