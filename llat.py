@@ -154,7 +154,7 @@ def faq_app():
                         # Rerun to clear suggestions and show answer
                         st.rerun() 
         else:
-            st.info("No close matches found in the FAQ dataset.")
+            st.info("Hmmm, gak ketemu nih, coba pakai pertanyaan atau pilihan kata berbeda.")
             st.session_state.current_answer = None
             st.session_state.suggested_q = None
             
@@ -168,6 +168,7 @@ def faq_app():
 # Run the application
 if __name__ == "__main__":
     faq_app()
+
 
 
 
