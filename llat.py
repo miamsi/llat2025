@@ -120,9 +120,9 @@ def find_similar_questions(query, df, vectorizer, tfidf_matrix):
 
 # --- STREAMLIT APP LAYOUT ---
 def faq_app():
-    st.set_page_config(page_title="FAQ Jadwal Langkah-langkah Akhir Tahun 2025", layout="centered")
+    st.set_page_config(page_title="FAQ Jadwal Langkah-langkah Akhir Tahun 2025 oleh PPA I DJPb Provinsi Riau", layout="centered")
     
-    st.title("🤖 FAQ Jadwal Langkah-langkah Akhir Tahun 2025 Chatbot")
+    st.title("🤖 FAQ Jadwal Langkah-langkah Akhir Tahun 2025 oleh PPA I DJPb Provinsi Riau")
     st.markdown("Silahkan masukkan pertanyaan, nanti saya akan tampilkan informasi paling sesuai dari dataset.")
 
     # Load data only once
@@ -168,6 +168,7 @@ def faq_app():
 # Run the application
 if __name__ == "__main__":
     faq_app()
+
 
 
 
