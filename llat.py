@@ -122,7 +122,7 @@ def find_similar_questions(query, df, vectorizer, tfidf_matrix):
 def faq_app():
     st.set_page_config(page_title="FAQ Jadwal Langkah-langkah Akhir Tahun 2025", layout="centered")
     
-    st.title("🤖 FAQ Similarity Chatbot")
+    st.title("🤖 FAQ Jadwal Langkah-langkah Akhir Tahun 2025 Chatbot")
     st.markdown("Silahkan masukkan pertanyaan, nanti saya akan tampilkan informasi paling sesuai dari dataset.")
 
     # Load data only once
@@ -168,5 +168,6 @@ def faq_app():
 # Run the application
 if __name__ == "__main__":
     faq_app()
+
 
 
